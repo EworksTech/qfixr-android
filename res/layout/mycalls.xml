@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+	                    <ListView
+					        android:id="@+id/listViewMyCalls"
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:cacheColorHint="@android:color/transparent"
+					        android:dividerHeight="1dp"
+					        android:fadingEdge="none"
+					        android:listSelector="@android:color/transparent"
+					        android:padding="1dp" >
+					    </ListView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+	                    <ListView
+					        android:id="@+id/listViewMyCallsEnded"
+					        android:layout_width="match_parent"
+					        android:layout_height="match_parent"
+					        android:cacheColorHint="@android:color/transparent"
+					        android:dividerHeight="1dp"
+					        android:fadingEdge="none"
+					        android:listSelector="@android:color/transparent"
+					        android:padding="1dp" >
+					    </ListView>
+                </LinearLayout>
+    
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

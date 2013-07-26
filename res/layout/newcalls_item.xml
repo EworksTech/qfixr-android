@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView        
+        android:id="@+id/scrollcontent"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:orientation="vertical"
+    	android:background="@color/white">
+        	<LinearLayout 
+        	    android:id="@+id/content"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical"
+			    android:background="@android:color/transparent"
+			    android:padding="10dp" >
+
+        		<TextView
+        		    android:id="@+id/callid"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_gravity="center_horizontal"
+        		    android:text="24589"
+        		    android:textSize="36sp"
+        		    android:textColor="@color/blueq" />
+        		<TextView
+        		    android:id="@+id/callid"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_gravity="center_horizontal"
+        		    android:gravity="center"
+        		    android:text="Filadelfo Santos Reis, 293 - Vila dos Comerciarios I"
+        		    android:textSize="18sp"
+        		    android:textColor="@color/darkgray"
+        		    android:layout_marginTop="10dp"
+        		     />
+        		
+        		<View          
+			      android:layout_width="fill_parent" 
+			      android:layout_height="1dp" 
+			      android:background="#DADADA"
+			      android:layout_marginTop="10dp" />
+        		<!-- novo item -->
+        		
+        		<RelativeLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_marginTop="10dp"
+				    >
+					
+        		    <ImageView 
+				       	android:id="@+id/icon"
+				       	android:src="@drawable/icon_servico"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"
+				      	android:layout_centerVertical="true"
+				       />				
+				    <LinearLayout
+				        android:id="@+id/rowtexts"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical"
+				        android:layout_toRightOf="@id/icon"
+				        android:layout_marginLeft="10dp"
+				         >				
+				        <TextView
+		        		    android:id="@+id/labelservico"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="Serviço"
+		        		    android:textColor="@color/blueq"
+		        		    
+		        		     />
+		        		<TextView
+		        		    android:id="@+id/servico"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="Manutenção em Hardware"
+		        		    android:textColor="@color/darkgray"
+		        		    
+		        		     />
+				    </LinearLayout>
+				    
+			
+				</RelativeLayout>
+        		
+        		<!-- /novo item -->
+        		
+        		
+        		<View          
+			      android:layout_width="fill_parent" 
+			      android:layout_height="1dp" 
+			      android:background="#DADADA"
+			      android:layout_marginTop="10dp" />
+        			<!-- novo item -->
+        		
+        		<RelativeLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_marginTop="10dp"
+				    >
+					
+        		    <ImageView 
+				       	android:id="@+id/icon"
+				       	android:src="@drawable/icon_dispositivo"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"
+				      	android:layout_centerVertical="true"
+				       />				
+				    <LinearLayout
+				        android:id="@+id/rowtexts"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical"
+				        android:layout_toRightOf="@id/icon"
+				        android:layout_marginLeft="10dp"
+				         >				
+				        <TextView
+		        		    android:id="@+id/labeldispositivo"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="Dispositivo"
+		        		    android:textColor="@color/blueq"
+		        		    
+		        		     />
+		        		<TextView
+		        		    android:id="@+id/dispositivo"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="Impressora"
+		        		    android:textColor="@color/darkgray"
+		        		    
+		        		     />
+				    </LinearLayout>
+				    
+			
+				</RelativeLayout>
+        		
+        		<!-- /novo item -->
+        		
+        		
+        		<View          
+			      android:layout_width="fill_parent" 
+			      android:layout_height="1dp" 
+			      android:background="#DADADA"
+			      android:layout_marginTop="10dp" />
+        			<!-- novo item -->
+        		
+        		<RelativeLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_marginTop="10dp"
+				    >
+					
+        		    <ImageView 
+				       	android:id="@+id/icon"
+				       	android:src="@drawable/icon_descricao"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"
+				      	android:layout_centerVertical="true"
+				       />				
+				    <LinearLayout
+				        android:id="@+id/rowtexts"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical"
+				        android:layout_toRightOf="@id/icon"
+				        android:layout_marginLeft="10dp"
+				         >				
+				        <TextView
+		        		    android:id="@+id/labeldescricao"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="Descrição"
+		        		    android:textColor="@color/blueq"
+		        		    
+		        		     />
+		        		<TextView
+		        		    android:id="@+id/descricao"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="Papel enroscando na impressora, mesmo colocando um papel por vez."
+		        		    android:textColor="@color/darkgray"
+		        		    
+		        		     />
+				    </LinearLayout>
+				    
+			
+				</RelativeLayout>
+        		
+        		<!-- /novo item -->
+        		
+        		
+        	    <View          
+			      android:layout_width="fill_parent" 
+			      android:layout_height="1dp" 
+			      android:background="#DADADA"
+			      android:layout_marginTop="10dp" />
+        	    <!-- novo item -->
+        		
+        		<RelativeLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_marginTop="10dp"
+				    >
+					
+        		    <ImageView 
+				       	android:id="@+id/icon"
+				       	android:src="@drawable/icon_cliente"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"
+				      	android:layout_centerVertical="true"
+				       />				
+				    <LinearLayout
+				        android:id="@+id/rowtexts"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical"
+				        android:layout_toRightOf="@id/icon"
+				        android:layout_marginLeft="10dp"
+				         >				
+				        <TextView
+		        		    android:id="@+id/labelcliente"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="Cliente"
+		        		    android:textColor="@color/blueq"
+		        		    
+		        		     />
+		        		<TextView
+		        		    android:id="@+id/cliente"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="Cesar Schneider"
+		        		    android:textColor="@color/darkgray"
+		        		    
+		        		     />
+				    </LinearLayout>
+				    
+			
+				</RelativeLayout>
+        		
+        		<!-- /novo item -->
+        		
+        		<View          
+			      android:layout_width="fill_parent" 
+			      android:layout_height="1dp" 
+			      android:background="#DADADA"
+			      android:layout_marginTop="10dp" />
+        		<!-- novo item -->
+        		
+        		<RelativeLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_marginTop="10dp"
+				    >
+					
+        		    <ImageView 
+				       	android:id="@+id/icon"
+				       	android:src="@drawable/icon_contatos"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"
+				      	android:layout_centerVertical="true"
+				       />				
+				    <LinearLayout
+				        android:id="@+id/rowtexts"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:orientation="vertical"
+				        android:layout_toRightOf="@id/icon"
+				        android:layout_marginLeft="10dp"
+				         >				
+				        <TextView
+		        		    android:id="@+id/labelcontato"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="Contatos"
+		        		    android:textColor="@color/blueq"
+		        		    
+		        		     />
+		        		<TextView
+		        		    android:id="@+id/contato"
+		        		    android:layout_width="wrap_content"
+		        		    android:layout_height="wrap_content"
+		        		    android:text="44 5687-9452"
+		        		    android:textColor="@color/darkgray"
+		        		    
+		        		     />
+				    </LinearLayout>
+				    
+			
+				</RelativeLayout>
+        		
+        		<!-- /novo item -->
+        		
+        		
+        		<View          
+			      android:layout_width="fill_parent" 
+			      android:layout_height="1dp" 
+			      android:background="#DADADA"
+			      android:layout_marginTop="10dp" />
+        		
+        		<TextView
+        		    android:id="@+id/agenda"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_gravity="center_horizontal"
+        		    android:gravity="center"
+        		    android:text="Agendado para as 18:00"
+        		    android:textColor="@color/rust"
+        		    android:layout_marginTop="10dp"
+        		     />
+        		
+        		<Button 
+					android:id="@+id/btn_atender"
+					android:textColor="@color/white"
+				    android:layout_width="148dp"
+				    android:layout_height="wrap_content"
+				    android:text="Atender Chamado"
+				    android:padding="5dip"
+				    android:layout_gravity="center"
+				    android:background="@drawable/main_btn_selector"
+				    android:textSize="14sp"
+				     android:layout_marginTop="10dp"
+				    />
+			</LinearLayout>
+    </ScrollView>
+</LinearLayout>

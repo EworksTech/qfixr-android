@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.etica.qfixr"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        <activity
+            android:name="com.etica.qfixr.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+	        android:name="com.etica.qfixr.MainActivity"
+	        android:label="@string/app_name" 
+	        android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.NewCalls"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.NewCallsItem"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.MyCalls"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.MyCallsItem"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.MyAccount"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.MyAccountEdit"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.MyCertifications"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.MyCertificationsItem"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.MyNotifications"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.MyNotificationsItem"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+        <activity
+	        android:name="com.etica.qfixr.ConstructionArea"
+	        android:label="@string/app_name" 
+	        android:theme="@style/QFIXR"
+	        android:screenOrientation="portrait"
+	        android:windowBackground="@android:color/transparent"
+        />
+    </application>
+<!--  android:theme="@style/AppTheme" -->
+</manifest>

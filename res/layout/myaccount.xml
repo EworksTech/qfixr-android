@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    			
+        		<TextView
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_gravity="center_horizontal"
+        		    android:gravity="center"
+        		    android:text="Média dos atendimentos"
+        		    android:textSize="18sp"
+        		    android:textColor="@color/darkgray"
+        		    android:layout_marginTop="10dp"
+        		     />
+				<ImageView 
+				       	android:id="@+id/stars"
+				       	android:src="@drawable/stars"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"
+				      	android:layout_gravity="center_horizontal"
+				      	android:layout_marginTop="10dp"
+				       />
+				<TextView
+        		    android:id="@+id/label_total"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_gravity="center_horizontal"
+        		    android:gravity="center"
+        		    android:text="Total de 15 atendimentos"
+        		    android:textSize="14sp"
+        		    android:textColor="@color/darkgray"
+        		    android:layout_marginTop="10dp"
+        		     />
+				<TextView
+        		    android:id="@+id/label_tempo"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_gravity="center_horizontal"
+        		    android:gravity="center"
+        		    android:text="Técnico desde 20/08/2013"
+        		    android:textSize="12sp"
+        		    android:textColor="@color/darkgray"
+        		     />
+				<Button 
+					android:id="@+id/btn_conta"
+					android:textColor="@color/white"
+				    android:layout_width="180dp"
+				    android:layout_height="wrap_content"
+				    android:text="Meus Dados"
+				    android:padding="5dip"
+				    android:layout_gravity="center"
+				    android:background="@drawable/main_btn_selector"
+				    android:textSize="14sp"
+				     android:layout_marginTop="20dp"
+				    />
+				<Button 
+					android:id="@+id/btn_certificacao"
+					android:textColor="@color/white"
+				    android:layout_width="180dp"
+				    android:layout_height="wrap_content"
+				    android:text="Minhas Certificações"
+				    android:padding="5dip"
+				    android:layout_gravity="center"
+				    android:background="@drawable/main_btn_selector"
+				    android:textSize="14sp"
+				     android:layout_marginTop="10dp"
+				    />
+				<Button 
+					android:id="@+id/btn_notificacao"
+					android:textColor="@color/white"
+				    android:layout_width="180dp"
+				    android:layout_height="wrap_content"
+				    android:text="Minhas Notificações"
+				    android:padding="5dip"
+				    android:layout_gravity="center"
+				    android:background="@drawable/main_btn_selector"
+				    android:textSize="14sp"
+				     android:layout_marginTop="10dp"
+				    />
+				<Button 
+					android:id="@+id/btn_sair"
+					android:textColor="@color/white"
+				    android:layout_width="180dp"
+				    android:layout_height="wrap_content"
+				    android:text="Sair"
+				    android:padding="5dip"
+				    android:layout_gravity="center"
+				    android:background="@drawable/main_btn_selector"
+				    android:textSize="14sp"
+				     android:layout_marginTop="10dp"
+				    />
+</LinearLayout>

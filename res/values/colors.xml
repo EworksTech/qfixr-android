@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rust">#aa4c03</color>
+    <color name="darkgray">#686868</color>
+    <color name="lightgray">#eeeeee</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blueq">#005699</color>
+    <color name="orangeq">#f9a11b</color>
+</resources>
