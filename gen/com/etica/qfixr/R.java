@@ -59,12 +59,12 @@ public final class R {
         public static final int upnav=0x7f020016;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0036;
-        public static final int address=0x7f0a0034;
+        public static final int action_settings=0x7f0a0037;
+        public static final int address=0x7f0a0035;
         public static final int agenda=0x7f0a002f;
         public static final int body=0x7f0a0002;
         public static final int btn_ajuda=0x7f0a000c;
-        public static final int btn_atender=0x7f0a0032;
+        public static final int btn_atender=0x7f0a0033;
         public static final int btn_certificacao=0x7f0a0012;
         public static final int btn_chamados=0x7f0a0005;
         public static final int btn_checkin=0x7f0a0030;
@@ -78,12 +78,13 @@ public final class R {
         public static final int cliente=0x7f0a002c;
         public static final int contato=0x7f0a002e;
         public static final int content=0x7f0a0016;
-        public static final int defect=0x7f0a0033;
+        public static final int defect=0x7f0a0034;
         public static final int descricao=0x7f0a002a;
         public static final int dispositivo=0x7f0a0028;
         public static final int editAddress=0x7f0a001c;
         public static final int editEmail=0x7f0a001a;
         public static final int editName=0x7f0a0018;
+        public static final int endereco=0x7f0a0032;
         public static final int historico=0x7f0a0006;
         public static final int icon=0x7f0a0023;
         public static final int icon_ajuda=0x7f0a000b;
@@ -109,7 +110,7 @@ public final class R {
         public static final int rowtexts=0x7f0a0024;
         public static final int scrollcontent=0x7f0a0015;
         public static final int servico=0x7f0a0026;
-        public static final int splash=0x7f0a0035;
+        public static final int splash=0x7f0a0036;
         public static final int stars=0x7f0a000e;
         public static final int tab1=0x7f0a001e;
         public static final int tab2=0x7f0a0020;
@@ -138,7 +139,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f070001;
         public static final int app_name=0x7f070000;
-        public static final int hello_world=0x7f070002;
+        public static final int loading=0x7f070002;
     }
     public static final class style {
         /** 

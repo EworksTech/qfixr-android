@@ -23,16 +23,16 @@
         		    android:layout_width="wrap_content"
         		    android:layout_height="wrap_content"
         		    android:layout_gravity="center_horizontal"
-        		    android:text="24589"
+        		    android:text="@string/loading"
         		    android:textSize="36sp"
         		    android:textColor="@color/blueq" />
         		<TextView
-        		    android:id="@+id/callid"
+        		    android:id="@+id/endereco"
         		    android:layout_width="wrap_content"
         		    android:layout_height="wrap_content"
         		    android:layout_gravity="center_horizontal"
         		    android:gravity="center"
-        		    android:text="Filadelfo Santos Reis, 293 - Vila dos Comerciarios I"
+        		    android:text="@string/loading"
         		    android:textSize="18sp"
         		    android:textColor="@color/darkgray"
         		    android:layout_marginTop="10dp"
@@ -78,7 +78,7 @@
 		        		    android:id="@+id/servico"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="Manutenção em Hardware"
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -130,7 +130,7 @@
 		        		    android:id="@+id/dispositivo"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="Impressora"
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -182,7 +182,7 @@
 		        		    android:id="@+id/descricao"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="Papel enroscando na impressora, mesmo colocando um papel por vez."
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -234,7 +234,7 @@
 		        		    android:id="@+id/cliente"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="Cesar Schneider"
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -285,7 +285,7 @@
 		        		    android:id="@+id/contato"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="44 5687-9452"
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -309,7 +309,7 @@
         		    android:layout_height="wrap_content"
         		    android:layout_gravity="center_horizontal"
         		    android:gravity="center"
-        		    android:text="Agendado para as 18:00"
+        		    android:text="@string/loading"
         		    android:textColor="@color/rust"
         		    android:layout_marginTop="10dp"
         		     />
@@ -325,6 +325,7 @@
 				    android:background="@drawable/main_btn_selector"
 				    android:textSize="14sp"
 				     android:layout_marginTop="10dp"
+				     android:layout_marginBottom="20dp"
 				    />
 			</LinearLayout>
     </ScrollView>
