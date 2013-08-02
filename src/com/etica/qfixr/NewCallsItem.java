@@ -168,7 +168,7 @@ public class NewCallsItem extends Activity {
 		  public void getNewCallsJson(){
 			  
 			  	
-			    AndroidHttpClient httpClient = new AndroidHttpClient("http://192.168.0.4:8080/qfixr-app/index.php");
+			    AndroidHttpClient httpClient = new AndroidHttpClient(getString(R.string.app_server));
 			    httpClient.setConnectionTimeout(5000);
 			    
 		        ParameterMap params = httpClient.newParams()
@@ -220,7 +220,7 @@ public class NewCallsItem extends Activity {
 		  public void requestNewCallsItem(){
 			  
 			  	
-			    AndroidHttpClient httpClient = new AndroidHttpClient("http://192.168.0.4:8080/qfixr-app/index.php");
+			    AndroidHttpClient httpClient = new AndroidHttpClient(getString(R.string.app_server));
 			    httpClient.setConnectionTimeout(5000);
 			    
 		        ParameterMap params = httpClient.newParams()
