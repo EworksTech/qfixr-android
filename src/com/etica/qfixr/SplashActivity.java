@@ -44,30 +44,30 @@ public class SplashActivity extends Activity {
      } catch (Exception e) {
         Log.e(TAG, e.getMessage());
      }
-     
-     Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+     /*
+     Intent intent = new Intent(SplashActivity.this, Login.class);
      SplashActivity.this.startActivity(intent);   
      SplashActivity.this.finish();
-     /*
+     */
      // Start main activity
      
-     SharedPreferences prefs = getSharedPreferences("myprefs",Context.MODE_PRIVATE);   
-     String cpf = prefs.getString("cpf","empty");
+     SharedPreferences prefs = getSharedPreferences("useridentity",Context.MODE_PRIVATE);   
+     String userid = prefs.getString("userid","empty");
      
-     if(cpf == "empty"){
+     if(userid == "empty"){
      	
-    	 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+    	 Intent intent = new Intent(SplashActivity.this, Login.class);
          SplashActivity.this.startActivity(intent);   
          SplashActivity.this.finish();
      	
      } else {
      	
-    	 Intent intent = new Intent(SplashActivity.this, MainActivityApp.class);
+    	 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
          SplashActivity.this.startActivity(intent);   
          SplashActivity.this.finish();
          
      }
-     */
+     
     
      
       

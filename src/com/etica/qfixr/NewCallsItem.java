@@ -31,6 +31,7 @@ import android.widget.Toast;
 public class NewCallsItem extends Activity {
 	
 	String callid = "";
+	String userid;
 	
 	 protected void onCreate(Bundle savedInstanceState) {
 		 	
@@ -45,6 +46,8 @@ public class NewCallsItem extends Activity {
 			actionBar.setDisplayShowHomeEnabled(false);
 			actionBar.setTitle("Novos Chamados");
 			
+			SharedPreferences prefs = getSharedPreferences("useridentity",Context.MODE_PRIVATE);   
+		    userid = prefs.getString("userid","empty");
 			
 			Bundle extras = getIntent().getExtras();
 			if (extras != null) {
@@ -225,7 +228,7 @@ public class NewCallsItem extends Activity {
 			    
 		        ParameterMap params = httpClient.newParams()
 		                .add("appsender", "1")
-		                .add("id_tecnico","1");
+		                .add("id_tecnico",userid);
 		        httpClient.post("/chamados/atender/"+callid, params, new AsyncCallback() {
 		        
 		        	@Override

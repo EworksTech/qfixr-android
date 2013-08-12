@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/userlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:gravity="center"
+        android:text="Usuário"
+        android:textColor="@color/blueq"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userlabel"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/passwordlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Senha"
+        android:textColor="@color/blueq"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordlabel"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+        android:password="true" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/main_btn_selector"
+        android:padding="5dip"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

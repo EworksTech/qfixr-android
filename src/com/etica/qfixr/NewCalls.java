@@ -17,6 +17,7 @@ import com.turbomanage.httpclient.android.AndroidHttpClient;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -32,6 +33,8 @@ import android.widget.AdapterView.OnItemClickListener;
 
 public class NewCalls extends Activity {
 	
+	ProgressDialog dialog;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		
@@ -42,6 +45,10 @@ public class NewCalls extends Activity {
 		actionBar.setDisplayHomeAsUpEnabled(true);
 		actionBar.setIcon(R.drawable.logo_horizontal_actionbar);
 		actionBar.setDisplayShowTitleEnabled(false);
+		
+		dialog = ProgressDialog.show(NewCalls.this, "", 
+                "Carregando...", true);
+				dialog.show();
 		
 		IntentLauncher launcher = new IntentLauncher();
 		launcher.getNewCallsJson();
@@ -62,6 +69,10 @@ public class NewCalls extends Activity {
 	    String newcallsReload = prefs.getString("newcallsReload","empty");
 	     
 	     if(newcallsReload != "empty"){
+	    	 
+	    	 dialog = ProgressDialog.show(NewCalls.this, "", 
+	                 "Atualizando...", true);
+	 				dialog.show();
 	    	 
 	    	 IntentLauncher launcher = new IntentLauncher();
 	  		 launcher.getNewCallsJson();
@@ -145,6 +156,7 @@ public class NewCalls extends Activity {
 			}
 
 		});
+		dialog.hide();
 		
 	}
 	

@@ -4,6 +4,7 @@
     <string name="app_name">QFIXR</string>
     <string name="action_settings">Settings</string>
     <string name="loading">Carregando&#8230;</string>
-    <string name="app_server">http://app.qfixr.com.br/index.php</string>
+     <string name="app_server">http://app.qfixr.com.br/index.php</string> 
+     <!--<string name="app_server">http://192.168.0.2:8080/qfixr-app/index.php</string>-->
 
 </resources>

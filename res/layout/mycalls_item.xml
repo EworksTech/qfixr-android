@@ -23,16 +23,16 @@
         		    android:layout_width="wrap_content"
         		    android:layout_height="wrap_content"
         		    android:layout_gravity="center_horizontal"
-        		    android:text="24589"
+        		    android:text="@string/loading"
         		    android:textSize="36sp"
         		    android:textColor="@color/blueq" />
         		<TextView
-        		    android:id="@+id/callid"
+        		    android:id="@+id/endereco"
         		    android:layout_width="wrap_content"
         		    android:layout_height="wrap_content"
         		    android:layout_gravity="center_horizontal"
         		    android:gravity="center"
-        		    android:text="Filadelfo Santos Reis, 293 - Vila dos Comerciarios I"
+        		    android:text="@string/loading"
         		    android:textSize="18sp"
         		    android:textColor="@color/darkgray"
         		    android:layout_marginTop="10dp"
@@ -78,7 +78,7 @@
 		        		    android:id="@+id/servico"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="Manutenção em Hardware"
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -130,7 +130,7 @@
 		        		    android:id="@+id/dispositivo"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="Impressora"
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -182,7 +182,7 @@
 		        		    android:id="@+id/descricao"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="Papel enroscando na impressora, mesmo colocando um papel por vez."
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -234,7 +234,7 @@
 		        		    android:id="@+id/cliente"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="Cesar Schneider"
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -256,6 +256,8 @@
 				    android:layout_width="match_parent"
 				    android:layout_height="match_parent"
 				    android:layout_marginTop="10dp"
+				    android:clickable="true"
+				    android:background="@drawable/newcalls_list_selector"
 				    >
 					
         		    <ImageView 
@@ -285,7 +287,7 @@
 		        		    android:id="@+id/contato"
 		        		    android:layout_width="wrap_content"
 		        		    android:layout_height="wrap_content"
-		        		    android:text="44 5687-9452"
+		        		    android:text="@string/loading"
 		        		    android:textColor="@color/darkgray"
 		        		    
 		        		     />
@@ -303,17 +305,54 @@
 			      android:background="#DADADA"
 			      android:layout_marginTop="10dp" />
         		
+        		<RelativeLayout 
+				    android:id="@+id/progress"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:clickable="true"
+				    android:background="@drawable/newcalls_list_selector" >
+				    <LinearLayout
+				        android:id="@+id/progressrow"
+				        android:layout_width="wrap_content"
+				        android:layout_height="50dp"
+				        android:orientation="vertical"
+				        android:padding="5dip"
+				         >
+				
+				        <TextView
+				            android:id="@+id/defect"
+				            android:layout_width="250dp"
+				            android:layout_height="wrap_content"
+				            android:text="Andamento"
+				            android:textColor="@color/blueq"
+				            android:textSize="16sp"
+				            android:layout_marginTop="10dp" />
+				 
+				    </LinearLayout>
+				    <ImageView 
+				       android:src="@drawable/list_arrow"
+				       android:layout_width="wrap_content"
+				       android:layout_height="wrap_content"
+				       android:layout_toRightOf="@id/progressrow"
+				       android:layout_centerVertical="true"
+				       />
+				
+				</RelativeLayout>
+				<View          
+			      android:layout_width="fill_parent" 
+			      android:layout_height="1dp" 
+			      android:background="#DADADA"
+			      />
         		<TextView
         		    android:id="@+id/agenda"
         		    android:layout_width="wrap_content"
         		    android:layout_height="wrap_content"
         		    android:layout_gravity="center_horizontal"
         		    android:gravity="center"
-        		    android:text="Agendado para as 18:00"
+        		    android:text="@string/loading"
         		    android:textColor="@color/rust"
         		    android:layout_marginTop="10dp"
         		     />
-        		
         		<Button 
 					android:id="@+id/btn_checkin"
 					android:textColor="@color/white"
@@ -326,7 +365,35 @@
 				    android:textSize="14sp"
 				     android:layout_marginTop="10dp"
 				    />
-        		<!--  
+        		<Button 
+					android:id="@+id/btn_checkout"
+					android:textColor="@color/white"
+				    android:layout_width="148dp"
+				    android:layout_height="wrap_content"
+				    android:text="Check-out"
+				    android:padding="5dip"
+				    android:layout_gravity="center"
+				    android:background="@drawable/main_btn_selector"
+				    android:textSize="14sp"
+				    android:layout_marginTop="10dp"
+				    android:layout_marginBottom="30dp"
+				    android:enabled="false"
+				    />
+        		<!--
+        		<Button 
+					android:id="@+id/btn_andamento"
+					android:textColor="@color/white"
+				    android:layout_width="148dp"
+				    android:layout_height="wrap_content"
+				    android:text="Adicionar Nota"
+				    android:padding="5dip"
+				    android:layout_gravity="center"
+				    android:background="@drawable/main_btn_selector"
+				    android:textSize="14sp"
+				    android:layout_marginTop="10dp"
+				     android:layout_marginBottom="30dp"
+				    />
+        		  
         		<Button 
 					android:id="@+id/btn_finalizar"
 					android:textColor="@color/white"
